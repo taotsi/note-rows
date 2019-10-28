@@ -5,7 +5,7 @@ using namespace taotsi;
 
 int main(int argc, const char** argv)
 {
-  NoteRows nr{IntervalType::Dissonant};
+  NoteRows nr{IntervalType::Consonant};
   nr.print_all();
   return 0;
 }

@@ -3,20 +3,9 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include "basic_concepts.hh"
 
 using namespace taotsi;
-
-enum class IntervalType
-{
-  Dissonant,
-  Consonant
-};
-
-int interval(int a, int b);
-
-bool is_dissonant(int interval);
-bool is_consonant(int interval);
-bool is_interval_type(int interval, IntervalType interval_type);
 
 class NoteRows
 {
@@ -39,14 +28,14 @@ public:
   }
   void print_all()
   {
-    // for(const auto &rows : all_rows_)
-    // {
-    //   for(auto note : rows)
-    //   {
-    //     std::cout << note << ", ";
-    //   }
-    //   std::cout << "\n";
-    // }
+    for(const auto &rows : all_rows_)
+    {
+      for(auto note : rows)
+      {
+        std::cout << note << ", ";
+      }
+      std::cout << "\n";
+    }
     std::cout << "there're " << all_rows_.size() << " rows\n";
   }
 private:

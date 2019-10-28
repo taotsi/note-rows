@@ -1,4 +1,4 @@
-add_library(libnote_rows note_rows.cc)
+add_library(libnote_rows note_rows.cc basic_concepts.cc)
 
 target_include_directories(libnote_rows PUBLIC ${include_dir})
 target_include_directories(libnote_rows PUBLIC ${utility_dir})

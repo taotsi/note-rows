@@ -1,4 +1,4 @@
-add_executable(test_note_rows test_main.cc test_note_rows.cc)
+add_executable(test_note_rows test_main.cc test_note_rows.cc test_basic_concepts.cc)
 
 target_include_directories(test_note_rows PUBLIC ${include_dir})
 target_include_directories(test_note_rows PUBLIC ${catch2_dir})
