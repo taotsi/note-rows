@@ -17,6 +17,7 @@ target_include_directories(note_rows PUBLIC ${include_dir})
 target_include_directories(note_rows PUBLIC ${utility_dir})
 
 target_link_libraries(note_rows PRIVATE libnote_rows)
+target_link_libraries(note_rows PRIVATE midifile)
 
 if(MSVC)
   set_target_properties(note_rows PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR})

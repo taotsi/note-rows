@@ -12,6 +12,7 @@ set(catch2_dir ${PROJECT_SOURCE_DIR}/extern/catch2)
 
 add_subdirectory(src)
 add_subdirectory(test)
+add_subdirectory(extern/midifile/src)
 
 enable_testing()
 add_test(
